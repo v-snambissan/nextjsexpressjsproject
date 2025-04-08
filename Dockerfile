@@ -5,7 +5,7 @@ FROM node:22-alpine
 WORKDIR /usr/src/app
 
 # Step 3: Copy package.json and package-lock.json (or yarn.lock) to the working directory
-COPY package*.json ./
+COPY package*.json /usr/src/app
 
 # Step 4: Install dependencies
 RUN npm install
